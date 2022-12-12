@@ -1,27 +1,23 @@
 import React from "react";
-import Weather from "./Weather";
+import City from "./City";
+import Search from "./Search";
+import Currentday from "./Currentday";
 
-import { Audio } from "react-loader-spinner";
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Hello world</h1>
-        <Weather city="Maiorca" />
-        <Audio
-          height="80"
-          width="80"
-          radius="9"
-          color="green"
-          ariaLabel="loading"
-          wrapperStyle
-          wrapperClass
-        />
-      </header>
+      <div className="weather-container">
+        <div className="container">
+          <City />
+          <Search />
+          <Currentday />
+        </div>
+        <div className="weather-forecast"></div>
+      </div>
     </div>
   );
 }
 
-export default App;
+

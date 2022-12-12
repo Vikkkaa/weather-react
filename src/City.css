@@ -1,0 +1,12 @@
+h1 {
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 2px;
+}
+
+.country {
+  font-size: 24px;
+  font-weight: lighter;
+  margin-top: 28px;
+  margin-right: 45px;
+}

@@ -1,0 +1,18 @@
+form {
+  max-width: 90%;
+  margin: 2px auto;
+}
+
+.btn-outline-secondary {
+  border-color: #777777;
+}
+
+.btn-warning.current {
+  color: #696969;
+}
+
+.btn-warning.current:hover {
+  color: #696969;
+  background-color: #f5e5b5;
+  border-color: #f5e5b5;
+}
