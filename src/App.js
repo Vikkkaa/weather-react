@@ -1,7 +1,7 @@
-import logo from "./logo.svg";
+import React from "react";
 import Weather from "./Weather";
 
-import { Audio } from 'react-loader-spinner';
+import { Audio } from "react-loader-spinner";
 import "./App.css";
 
 function App() {
