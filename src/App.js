@@ -17,6 +17,12 @@ export default function App() {
         </div>
         <div className="weather-forecast"></div>
       </div>
+      <small class="footer">
+        <a href="https://github.com/Vikkkaa/weather-react" target="blank">
+          Open-source code
+        </a>
+        by Vik Shpetna
+      </small>
     </div>
   );
 }
