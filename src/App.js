@@ -10,16 +10,16 @@ function App() {
       <header className="App-header">
         <h1>Hello world</h1>
         <Weather city="Maiorca" />
+        <Audio
+          height="80"
+          width="80"
+          radius="9"
+          color="green"
+          ariaLabel="loading"
+          wrapperStyle
+          wrapperClass
+        />
       </header>
-      <Audio
-        height="80"
-        width="80"
-        radius="9"
-        color="green"
-        ariaLabel="loading"
-        wrapperStyle
-        wrapperClass
-      />
     </div>
   );
 }
