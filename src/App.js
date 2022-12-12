@@ -2,6 +2,7 @@ import React from "react";
 import City from "./City";
 import Search from "./Search";
 import Currentday from "./Currentday";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 import "./App.css";
 
