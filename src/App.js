@@ -17,14 +17,12 @@ export default function App() {
         </div>
         <div className="weather-forecast"></div>
       </div>
-      <small class="footer">
-        <a href="https://github.com/Vikkkaa/weather-react" target="blank">
-          Open-source code
+      <small className="footer">
+        This project was coded by Vik Shpetna and is {""}
+        <a href="https://github.com/Vikkkaa/weather-react" target="_blank">
+          open-sourced on GitHub
         </a>
-        {}by Vik Shpetna
       </small>
     </div>
   );
 }
-
-
