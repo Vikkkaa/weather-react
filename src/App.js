@@ -21,7 +21,7 @@ export default function App() {
         <a href="https://github.com/Vikkkaa/weather-react" target="blank">
           Open-source code
         </a>
-        by Vik Shpetna
+        {}by Vik Shpetna
       </small>
     </div>
   );
