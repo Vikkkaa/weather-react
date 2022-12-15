@@ -19,7 +19,11 @@ export default function App() {
       </div>
       <small className="footer">
         This project was coded by Vik Shpetna and is {""}
-        <a href="https://github.com/Vikkkaa/weather-react" target="_blank">
+        <a
+          href="https://github.com/Vikkkaa/weather-react"
+          target="_blank"
+          rel="noreferrer"
+        >
           open-sourced on GitHub
         </a>
       </small>

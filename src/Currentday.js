@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-
 import "./Currentday.css";
 
 export default function Currentday(props) {
@@ -45,7 +44,7 @@ export default function Currentday(props) {
         </div>
         <div className="col-md-6">
           <div className="weather-description text-capitalize">
-            <p>
+            
               <div className="weekday">{CurrentdayData.date}</div>
               <div className="description">
                 <span>{CurrentdayData.description}</span>
@@ -56,7 +55,7 @@ export default function Currentday(props) {
               <div className="wind">
                 Wind: <span>{Math.round(CurrentdayData.wind)}</span> km/h
               </div>
-            </p>
+            
           </div>
         </div>
       </div>
@@ -69,9 +68,8 @@ export default function Currentday(props) {
     return (
       <ClipLoader
         color="#000000"
-        loading= "true"
-        
-        size={150}
+        loading="true"
+        size={75}
         aria-label="Loading Spinner"
         data-testid="loader"
       />
