@@ -1,7 +1,9 @@
 import axios from "axios";
 import { rampLoading } from "fontawesome";
 import React, { useState } from "react";
+import ClipLoader from "react-spinners/ClipLoader";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
 
 import "./Currentday.css";
 
@@ -64,6 +66,15 @@ export default function Currentday(props) {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.cityInput}&appid=${apiKey}&units=metric`;
 
     axios.get(apiUrl).then(handleSubmit);
-    return "Loading..";
+    return (
+      <ClipLoader
+        color="#000000"
+        loading= "true"
+        
+        size={150}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />
+    );
   }
 }
