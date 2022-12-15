@@ -13,7 +13,7 @@ export default function App() {
         <div className="container">
           <City />
           <Search />
-          <Currentday />
+          <Currentday cityInput="Lisbon" />
         </div>
         <div className="weather-forecast"></div>
       </div>
