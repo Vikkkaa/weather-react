@@ -1,8 +1,8 @@
-import axios from "axios";
-import { rampLoading } from "fontawesome";
 import React, { useState } from "react";
+import axios from "axios";
 import ClipLoader from "react-spinners/ClipLoader";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import FormatDate from "./FormatDay";
 
 import "./Currentday.css";
 
@@ -14,7 +14,7 @@ export default function Currentday(props) {
 
     setCurrentdayData({
       ready: true,
-      date: "Thursday 15/12",
+      date: new Date(response.data.dt*1000),
       temperature: response.data.main.temp,
       imgUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
 
@@ -45,7 +45,7 @@ export default function Currentday(props) {
         <div className="col-md-6">
           <div className="weather-description text-capitalize">
             
-              <div className="weekday">{CurrentdayData.date}</div>
+              <div className="weekday"><FormatDate date={CurrentdayData.date} /></div>
               <div className="description">
                 <span>{CurrentdayData.description}</span>
               </div>
