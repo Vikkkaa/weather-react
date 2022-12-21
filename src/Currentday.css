@@ -1,12 +1,16 @@
-.material-icons {
+canvas {
   position: relative;
-  margin-right: 0px;
-  margin-left: 35px;
-  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 25px;
+  margin-top: 5px;
+  margin-bottom: -15px;
 }
 
 .temp {
+  position: relative;
   margin-left: 0px;
+  margin-bottom: 5px;
+  
 }
 
 h2 {

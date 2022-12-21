@@ -3,7 +3,7 @@ import axios from "axios";
 import City from "./City";
 import Currentday from "./Currentday";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import ClipLoader from "react-spinners/ClipLoader";
+
 
 import "./Weather.css";
 
@@ -83,13 +83,7 @@ export default function Weather(props) {
   else {
    Search();
     return (
-      <ClipLoader
-        color="#000000"
-        loading="true"
-        size={55}
-        aria-label="Loading Spinner"
-        data-testid="loader"
-      />
+      "Loading.."
     );
   }
 }
