@@ -5,6 +5,7 @@ import FormatDate from "./FormatDay";
 
 import "./Currentday.css";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function Currentday(props) {
   return (
@@ -19,8 +20,8 @@ export default function Currentday(props) {
                   alt={props.data.description}
                 />
               </span>
-              <span className="temp">{Math.round(props.data.temperature)}</span>
-              <span className="units">°C</span>
+              <WeatherTemperature celsius={props.data.temperature} />
+              
             </h2>
           </div>
         </div>
