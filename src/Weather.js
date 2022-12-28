@@ -1,7 +1,9 @@
 import React, {useState} from "react";
 import axios from "axios";
 import City from "./City";
+import CurrentLocation from "./CurrentLocation";
 import Currentday from "./Currentday";
+
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -68,11 +70,8 @@ export default function Weather(props) {
              <i className="fa-solid fa-magnifying-glass"></i>
            </button>
          </div>
-         <span>
-           <button type="button" className="btn btn-warning current">
-             Current
-           </button>
-         </span>
+         <CurrentLocation />
+         
        </div>
      </form>
      <Currentday data={weatherData} />
