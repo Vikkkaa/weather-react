@@ -18,6 +18,7 @@ export default function Currentday(props) {
                 <WeatherIcon
                   code={props.data.icon}
                   alt={props.data.description}
+                  size={64}
                 />
               </span>
               <WeatherTemperature celsius={props.data.temperature} />

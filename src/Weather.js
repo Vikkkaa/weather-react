@@ -3,6 +3,7 @@ import axios from "axios";
 import City from "./City";
 import CurrentLocation from "./CurrentLocation";
 import Currentday from "./Currentday";
+import Forecast from "./Forecast";
 
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
@@ -63,7 +64,7 @@ export default function Weather(props) {
              onChange={updateCity}
            />
            <button
-             className="btn btn-outline-secondary"
+             className="btn btn-danger"
              type="button"
              onclick="submitSearch(event)"
            >
@@ -75,6 +76,7 @@ export default function Weather(props) {
        </div>
      </form>
      <Currentday data={weatherData} />
+     <Forecast />
    </div>
  );
 }
