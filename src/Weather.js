@@ -62,7 +62,7 @@ export default function Weather(props) {
               <button
                 className="btn btn-danger"
                 type="button"
-                onclick="submitSearch(event)"
+                onClick={Search}
               >
                 <i className="fa-solid fa-magnifying-glass-location"></i>
               </button>
