@@ -58,5 +58,8 @@
 }
 .App {
   margin: 15px;
+  
 }
-
+.footer {
+  margin-top: 0px;
+}

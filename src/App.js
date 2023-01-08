@@ -20,7 +20,7 @@ export default function App() {
         <a
           href="https://github.com/Vikkkaa/weather-react"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           open-sourced on GitHub
         </a>
