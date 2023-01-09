@@ -67,7 +67,7 @@ export default function Weather(props) {
                 <i className="fa-solid fa-magnifying-glass-location"></i>
               </button>
             </div>
-            <CurrentLocation />
+            <CurrentLocation weatherSearch={handleResponse} />
           </div>
         </form>
         <Currentday data={weatherData} />
